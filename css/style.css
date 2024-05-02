@@ -1,3 +1,75 @@
+/* ========================header section start css ========================= */
+.header {
+    padding-block: 8px;
+}
+.header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo-wrapper {
+    max-width: 80px;
+    flex: 80px;
+    aspect-ratio: 1;
+}
+.header .logo-wrapper img {
+    object-fit: contain;
+}
+.header .nav-bar {
+    flex: 1;
+}
+.header .social-icons {
+    max-width: 160px;
+    flex: 160px;
+    margin-inline: -8px;
+}
+.header .link-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .link-item {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    font-family: 'Old Standard TT';
+    text-transform: uppercase;
+    padding: 12px;
+    color: #121E29;
+}
+.header .social-links {
+    display: flex;
+}
+.header .social-icon {
+    max-width: 40px;
+    flex: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 8px;
+    transition: all .6s;
+}
+.header .social-icon:hover {
+    background-color: #157bda;
+    box-shadow: 4px 2px 2px #999;
+}
+.header .social-icon:hover .social-item svg path,
+.header .social-icon:hover .social-item svg {
+    transition:all .2s;
+}
+.header .social-icon:hover .social-item svg path,
+.header .social-icon:hover .social-item svg {
+    stroke: #fff;
+    fill: #fff;
+}
+.header .social-icon:last-child {
+    margin-right: 0;
+}
+.header .social-item {
+    width: 100%;
+    height: 100%;
+}
+/* ========================header section end css ========================= */
 /* ========================contact section start css ========================= */
 .contact {
     background: #f3f5f0;
@@ -25,12 +97,14 @@
     padding: 0 10px;
 }
 .contact__image-card {
-    max-width: 461px;
-    flex: 461px;
+    max-width: 50%;
+    flex: 50%;
     overflow: hidden;
 }
 .contact-image {
     margin-bottom: 40px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 .contact .sub-content {
     text-align: center;
@@ -129,10 +203,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 /* ========================contact section end   css ================================= */
 /* ========================Meadia Qurey section start   css ========================= */
 @media screen and (max-width:1279px) {
-    .contact__image-card {
-        max-width: 370px;
-        flex: 370px;
-    }
     .contact .contact-title {
         padding: 0 36px;
         font-size: 30px;
@@ -176,10 +246,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         padding: 0 28px;
         font-size: 25px;
         font-weight: 300;
-    }
-    .contact__image-card {
-        max-width: 280px;
-        flex: 280px;
     }
     .contact-image {
         margin-bottom: 25px;
