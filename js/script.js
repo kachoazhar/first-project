@@ -2,11 +2,7 @@
 const header = document.querySelector("[js-header]");
 window.addEventListener("scroll", scrollHandler);
 function scrollHandler() {
-  if (window.screenY > 20) {
-    header.classList.add("dddddddddddd")
-  } else {
-    header.classList.remove("dddddddddddd")
-  }
+  window.pageYOffset > 20 ? header.classList.add("postion-sticky") : header.classList.remove("postion-sticky")
 }
 // -----------------header section end here---------------------
 const swiper = new Swiper(".swiper-container", {

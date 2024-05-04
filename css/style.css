@@ -2,6 +2,14 @@
 .header {
     padding-block: 8px;
 }
+.header.postion-sticky {
+    position: sticky;
+    top: 0;
+    background-color: #e2e2e3;
+    color: #fff;
+    z-index: 2;
+    transition: all .3s ease-in-out;
+}
 .header .wrapper {
     display: flex;
     align-items: center;
@@ -32,7 +40,7 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 1;
-    font-family: 'Old Standard TT';
+    font-family: 'Old Standard TT', serif;
     text-transform: uppercase;
     padding: 12px;
     color: #121E29;
@@ -70,6 +78,44 @@
     height: 100%;
 }
 /* ========================header section end css ========================= */
+/* ========================Devrloper section start css ========================= */
+.developer {
+    padding-top:20px;
+    background-color: #f3f5f0;
+}
+.developer .wrapper {
+    display: flex;
+    align-items: center;
+}
+.developer .developer-profile {
+    max-width: 30%;
+    flex: 30%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.developer .developer-info {
+    flex: 1;
+    text-align: justify;
+    padding-left: 20px;
+}
+.developer .developer-name {
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 8px;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 600;
+    line-height: 1;
+}
+.developer .personal-info {
+    font-size: 16px;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: lowercase;
+}
+/* ========================Devrloper section end css ========================= */
 /* ========================contact section start css ========================= */
 .contact {
     background: #f3f5f0;
@@ -85,10 +131,11 @@
     padding: 0 55px;
     white-space: nowrap;
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Old Standard TT', serif;
     line-height: 1.23;
     letter-spacing: 0.4px;
+    color: #000;
 }
 .contact__sub-contant {
     margin-bottom: 40px;
@@ -100,11 +147,29 @@
     max-width: 50%;
     flex: 50%;
     overflow: hidden;
+    position: relative;
+}
+.contact-image::after {
+    content: 'Build on project in shopify store';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(101, 91, 77, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #ffffff;
+    text-transform: capitalize;
 }
 .contact-image {
     margin-bottom: 40px;
     border-radius: 20px;
     overflow: hidden;
+    position: relative;
 }
 .contact .sub-content {
     text-align: center;
@@ -206,7 +271,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     .contact .contact-title {
         padding: 0 36px;
         font-size: 30px;
-        font-weight: 400;
         line-height: 1.1;
     }
     .contact__image-card_wrap {
@@ -245,7 +309,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     .contact .contact-title {
         padding: 0 28px;
         font-size: 25px;
-        font-weight: 300;
     }
     .contact-image {
         margin-bottom: 25px;
